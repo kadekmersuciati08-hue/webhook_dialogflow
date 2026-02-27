@@ -19,30 +19,30 @@ app.post("/webhook", (req, res) => {
     ];
   } else if (hari === "Selasa") {
     jadwal = [
-      { jam: "08.10–09.30", mapel: "pjok"        },
+      { jam: "08.10–09.30", mapel: "pjok"        }
       { jam: "09.30–10.10", mapel: "dda"         }
       { jam: "10.10–10.40", mapel: "matematika"  }
     ]; 
     } else if (hari === "rabu") {
     jadwal = [
-      { jam: "08.10–09.30", mapel: "ppkn"             },
-      { jam: "09.30–10.10", mapel: "matemat           },
+      { jam: "08.10–09.30", mapel: "ppkn"             }
+      { jam: "09.30–10.10", mapel: "matematika        },
       { jam: "10.10–10.40", mapel: "seni budaya "     }
       { jam: "10.40–12.00", mapel: "sejarah"          },
-      { jam: "12.00-13.20", mapel: "bk"               },
-      { jam: "14.20-15.40", mapel: "bahasa indonesia" }
-                                                     
+      { jam: "12.00-13.20", mapel: "bk"               }
+      { jam: "14.20-15.40", mapel: "bahasa indonesia" },
+       ] ,                                           
       else if (hari === "kamis") {
     jadwal = [
       { jam: "08.10–09.30", mapel: "kka"          },
       { jam: "09.30–10.10", mapel: "dda"          }
       { jam: "10.10–10.40", mapel: "agama hindu"  }
-    ];  
+    ],
      else if (hari === "jumat") {
     jadwal = [
       { jam: "08.10–09.30", mapel: "informatika"          },
-      { jam: "09.30-14.20m", mapel: "bahasa inggris"       }
-    ]; 
+      { jam: "09.30-14.20m", mapel: "bahasa inggris"      }
+    ]
   } else {
     jadwal = [{ jam: "-", mapel: "Tidak ada jadwal" }];
   }
